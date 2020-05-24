@@ -10,7 +10,7 @@ body {
 
 #jumbo-bg {
 	min-height: 500px;
-	background-image: url('images/header-bg.jpg');
+	background-image: url('Images/header-bg.jpg');
  	background-size: cover;
  	background-repeat: no-repeat;
 }
