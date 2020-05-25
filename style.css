@@ -5,7 +5,6 @@ body {
 	font-family: Roboto Slab;
 	color: #3d3d3d;
 	font-size: 12px;
-	margin-bottom: 30px;
 }
 
 #jumbo-bg {
@@ -13,6 +12,7 @@ body {
 	background-image: url('Images/header-bg.jpg');
  	background-size: cover;
  	background-repeat: no-repeat;
+ 	margin-bottom: 0px;
 }
 
 #jumbo-txt {
@@ -28,3 +28,67 @@ body {
 #custom-nav {
 	font-size: 15px;
 }
+
+#blue-row {
+	background-color: #9edede;
+	margin-top: 0px;
+	padding-top: 50px;
+}
+
+#blue-row-2 {
+	background-color: #9edede;
+	margin-top: 0px;
+	padding-bottom: 30px;
+}
+
+/* change default navbar design */
+.navbar.navbar-expand-sm{
+    background-color: #9edede;
+    font-family: Roboto Slab;
+}
+
+/* mouse over link */
+a:hover {
+    color: #c94b99;
+    font-family: Roboto Slab;
+    text-decoration: none;
+}
+
+.tracking-in-contract {
+	-webkit-animation: tracking-in-contract 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 2s both;
+	        animation: tracking-in-contract 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 2s both;
+}
+
+/**
+ * ----------------------------------------
+ * animation tracking-in-contract
+ * ----------------------------------------
+ */
+@-webkit-keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+
+
