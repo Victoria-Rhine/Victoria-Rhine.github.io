@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Sacramento&display=swap');
 
 body {
 	background: #e4ebe5;
@@ -47,48 +48,39 @@ body {
     font-family: Roboto Slab;
 }
 
-/* mouse over link */
-a:hover {
+/* unvisited link */
+a:link {
     color: #c94b99;
     font-family: Roboto Slab;
     text-decoration: none;
+    font-size: 15px;
 }
 
-.tracking-in-contract {
-	-webkit-animation: tracking-in-contract 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 2s both;
-	        animation: tracking-in-contract 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 2s both;
+/* visited link */
+a:visited {
+    color: #c94b99;
+    font-family: Roboto Slab;
+    text-decoration: none;
+    font-size: 15px;
 }
 
-/**
- * ----------------------------------------
- * animation tracking-in-contract
- * ----------------------------------------
- */
-@-webkit-keyframes tracking-in-contract {
-  0% {
-    letter-spacing: 1em;
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    letter-spacing: normal;
-    opacity: 1;
-  }
-}
-@keyframes tracking-in-contract {
-  0% {
-    letter-spacing: 1em;
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    letter-spacing: normal;
-    opacity: 1;
-  }
+/* mouse over link */
+a:hover {
+    color: #fcff69;
+    font-family: Roboto Slab;
+    text-decoration: none;
+    font-size: 15px;
 }
 
+/* selected link */
+a:active {
+    color: #c94b99;
+    font-family: Roboto Slab;
+    text-decoration: none;
+    font-size: 15px;
+}
 
+#hello {
+	font-family: Sacramento;
+	font-weight: bold;
+}
