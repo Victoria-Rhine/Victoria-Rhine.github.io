@@ -1,56 +1,163 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Arimo&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One&display=swap');
 
 body {
-	background: #e4ebe5;
+	background: #f7ebf6;
 	font-family: Roboto Slab;
 	color: #3d3d3d;
 	font-size: 12px;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
 
-#jumbo-bg {
-	min-height: 500px;
-	background-image: url('Images/header-bg.jpg');
- 	background-size: cover;
- 	background-repeat: no-repeat;
- 	margin-bottom: 0px;
-}
-
-#jumbo-txt {
-	margin-top: 10%;
-	text-align: center;
- 	vertical-align: middle;
-}
-
+/* home page styling */
 #circle-image {
 	border-radius: 50%;
 }
 
-#custom-nav {
-	font-size: 15px;
+#profile-section {
+	background-color: rgba(226, 215, 215, 100);
+	padding-top: 40px;
+	padding-bottom: 40px;
+	box-shadow: 2px 2px 2px 2px grey;
 }
 
-#blue-row {
-	background-color: #9edede;
-	margin-top: 0px;
-	padding-top: 50px;
+#about-section {
+	background-color: #ffffff;
+	padding-top: 40px;
+	padding-bottom: 70px;
+	padding-left: 50px;
+	box-shadow: -1px 1px -1px -1px grey;
 }
 
-#blue-row-2 {
-	background-color: #9edede;
-	margin-top: 0px;
+#hello {
+	font-family: Arimo;
+	font-size: 80px;
+	font-weight: bold;
+	-webkit-animation: fade-in 4s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s both;
+	        animation: fade-in 4s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s both;
+}
+
+#intro {
+	font-family: Arimo;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#profile-name {
+	font-family: Fjalla One;
+	font-size: 23px;
+	font-weight: bold;
+	padding-top: 8px;
+}
+
+#profile-divider {
+	color: #704125;
+	width: 55%;
+}
+
+#profile-social-links {
+	background-color: #ffffff;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: 5px;
+	margin-bottom: 0px;
+}
+
+/* Bottom navigation styling */
+#bottom-footer {
+	background-color: #f7ebf6;
+	padding-top: 40px;
 	padding-bottom: 30px;
 }
 
-/* change default navbar design */
+/* Styling for resume page */
+#resume-white-column {
+	background-color: #ffffff;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	box-shadow: 5px 10px 8px 8px #888888;
+}
+
+#resume-top-column {
+	background-color: rgba(226, 215, 215, 100);
+	padding-top: 10px;
+	font-family: Fjalla One;
+	font-size: 30px;
+	text-align: center;
+	font-weight: bold;
+}
+
+#resume-padding {
+	background-color: rgba(226, 215, 215, 100);
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+#resume-headers {
+	font-family: Sacramento;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+/* Styling for projects page */
+#project-white-column {
+	background-color: #ffffff;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	margin-left: 5%;
+	box-shadow: 2px 7px 5px 5px grey;
+}
+
+#resume-headers-2 {
+	font-family: Fjalla One;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.video-wrapper {position: relative; padding-bottom: 56.25%; /* 16:9 */  padding-top: 25px;}
+.video-wrapper iframe {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+
+/* Custom button to use throughout site */
+.myButton {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, rgba(226, 215, 215, 100) 5%, #f6f6f6 100%);
+	background-color:rgba(226, 215, 215, 100);
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Georgia;
+	font-size:20px;
+	padding:9px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px rgba(226, 215, 215, 100);
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+	background-color:#f6f6f6;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+/* Change default navbar design */
 .navbar.navbar-expand-sm{
-    background-color: #9edede;
+    background-color: #ffffff;
     font-family: Roboto Slab;
+    height: 130px;
+    border-top: solid;
+    border-top-color: #6dbcc2;
+    border-top-width: 8px;
 }
 
 /* unvisited link */
 a:link {
-    color: #c94b99;
+    color: #4c4a4d;
     font-family: Roboto Slab;
     text-decoration: none;
     font-size: 15px;
@@ -58,7 +165,7 @@ a:link {
 
 /* visited link */
 a:visited {
-    color: #c94b99;
+    color: #4c4a4d;
     font-family: Roboto Slab;
     text-decoration: none;
     font-size: 15px;
@@ -66,7 +173,7 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-    color: #fcff69;
+    color: #746c78;
     font-family: Roboto Slab;
     text-decoration: none;
     font-size: 15px;
@@ -74,13 +181,44 @@ a:hover {
 
 /* selected link */
 a:active {
-    color: #c94b99;
+    color: #4c4a4d;
     font-family: Roboto Slab;
     text-decoration: none;
     font-size: 15px;
 }
 
-#hello {
-	font-family: Sacramento;
-	font-weight: bold;
+/* Table to hold resume stuff */
+table, th, td {
+  border: 0px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+table#t01 {
+  width: 100%;    
+  background-color: #ffffff;
+}
+
+/**
+ * ----------------------------------------
+ * animation fade-in for home page welcome
+ * ----------------------------------------
+ */
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
