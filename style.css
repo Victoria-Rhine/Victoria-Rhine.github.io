@@ -102,6 +102,8 @@ body {
 	border-color: gray;
 }
 
+#capstone-images:hover {opacity: 0.7;}
+
 #resume-white-column {
 	background-color: #ffffff;
 	padding-top: 20px;
@@ -210,7 +212,9 @@ a:hover {
     color: #746c78;
     font-family: Roboto Slab;
     text-decoration: none;
+    font-weight: bold;
     font-size: 15px;
+    text-shadow: 1px 1px #f7ebf6;
 }
 
 /* selected link */
