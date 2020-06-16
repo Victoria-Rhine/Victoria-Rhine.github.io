@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One&display=swap');
 
 body {
-	background: #f7ebf6;
+	background-color: #f7ebf6;
 	font-family: Roboto Slab;
 	color: #3d3d3d;
 	font-size: 12px;
@@ -74,6 +74,34 @@ body {
 }
 
 /* Styling for resume page */
+#capstone {
+	font-family: Sacramento;
+	font-size: 50px;
+	font-weight: bold;
+		-webkit-animation: fade-in 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.2s both;
+	        animation: fade-in 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.2s both;
+}
+
+#capstone2 {
+	font-size: 20px;
+		-webkit-animation: tracking-in-expand-fwd 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1.5s both;
+	        animation: tracking-in-expand-fwd 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1.5s both;
+}
+
+#capstone-post {
+	background-color: #ffffff;
+	box-shadow: 5px 10px 8px 8px grey;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	padding-top: 15px;
+}
+
+#capstone-images {
+	border-width: 1px;
+	border-style: solid;
+	border-color: gray;
+}
+
 #resume-white-column {
 	background-color: #ffffff;
 	padding-top: 20px;
@@ -94,6 +122,12 @@ body {
 	background-color: rgba(226, 215, 215, 100);
 	padding-top: 10px;
 	padding-bottom: 20px;
+}
+
+#capstone-padding {
+	background-color: rgba(226, 215, 215, 100);
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 #resume-headers {
@@ -219,6 +253,44 @@ table#t01 {
     opacity: 0;
   }
   100% {
+    opacity: 1;
+  }
+}
+
+/**
+ * ----------------------------------------
+ * animation tracking-in-expand-fwd
+ * ----------------------------------------
+ */
+@-webkit-keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+            transform: translateZ(-700px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+            transform: translateZ(-700px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
     opacity: 1;
   }
 }
