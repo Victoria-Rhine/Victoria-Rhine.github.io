@@ -84,8 +84,8 @@ body {
 
 #capstone2 {
 	font-size: 20px;
-		-webkit-animation: tracking-in-expand-fwd 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1.5s both;
-	        animation: tracking-in-expand-fwd 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1.5s both;
+		-webkit-animation: tracking-in-expand-fwd 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1.5s both;
+	        animation: tracking-in-expand-fwd 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1.5s both;
 }
 
 #capstone-post {
@@ -225,18 +225,10 @@ a:active {
     font-size: 15px;
 }
 
-/* Table to hold resume stuff */
-table, th, td {
-  border: 0px solid black;
-  border-collapse: collapse;
-}
-th, td {
-  padding: 10px;
+td, th {
+  border: 2px solid #dddddd;
   text-align: left;
-}
-table#t01 {
-  width: 100%;    
-  background-color: #ffffff;
+  padding: 8px;
 }
 
 /**
